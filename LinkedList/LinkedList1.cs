@@ -78,6 +78,25 @@ namespace LinkedList
             return this.head;
             
         }
+        public Node RemoveLastElement()
+        {
+            if (head == null)
+            {
+                Console.WriteLine("Linked List is empty.");
+                return null;
+            }
+            else
+            {
+                Node NewNode = head;
+                while(NewNode.next.next != null)
+                {
+                    NewNode = NewNode.next;
+                }
+                Node removedNode = NewNode.next;
+                NewNode.next = null;
+                return removedNode;
+            }
+        }
         public void Display()
         {
             if (head == null)

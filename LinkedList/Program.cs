@@ -11,7 +11,7 @@ namespace LinkedList
             linkedList.Append(30);
             linkedList.Append(70);
             linkedList.Display();
-            Console.WriteLine("Removed first element ", +linkedList.RemoveFirstElement().data);
+            Console.WriteLine("Removed last element ", +linkedList.RemoveLastElement().data);
             linkedList.Display();
         }
     }
